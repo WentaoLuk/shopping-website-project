@@ -1,0 +1,136 @@
+/* .productImage {
+  display: none;
+} */
+
+.itemmain {
+  position: relative;
+  /* background-color: yellow; */
+  height: 600px;
+}
+
+.productpicture {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  width: 430px;
+  height: 430px;
+}
+
+/* Style changes in the product information section */
+
+.productinfo {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 600px;
+  height: 190px;
+  border-bottom: 1px solid gray;
+}
+
+/* function style changes */
+
+.functions {
+  position: absolute;
+  width: 600px;
+  height: 280px;
+  top: 210px;
+  ;
+}
+
+.functions i {
+  font-weight: 700;
+}
+
+.functions .quantity_selection_box {
+  width: 35px;
+  height: 23px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.box .intro {
+  font-size: 20px;
+  margin: 20px;
+  font-weight: 700;
+}
+
+/* Font and size changes of the price section*/
+.box .price {
+  font-size: 30px;
+  font-weight: 500;
+  color: #ff8d41;
+}
+
+.box .sold {
+  font-style: italic;
+  font-weight: 600;
+  margin: 5px;
+}
+/* setting up the style 
+in the rating*/
+.product-stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.product-stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+/* setting up the styles of stars*/
+.product-stars-outer::before {
+  content: "\e9d9\e9d9\e9d9\e9d9\e9d9";
+  font-family: 'icomoon';
+  font-weight: 900;
+  color: #ccc;
+}
+
+.product-stars-inner::before {
+  content: "\e9d9\e9d9\e9d9\e9d9\e9d9";
+  font-family: 'icomoon';
+  font-weight: 900;
+  color: #f8ce0b;
+}
+
+/* style change in the total price section */
+
+#total_price {
+  font-style: 10px;
+  color: rgb(83, 8, 8);
+  margin-bottom: 10px;
+}
+
+/* calling the choice button function */
+
+.functions .choiceButton {
+  display: inline-block;
+  margin: 3px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+  font-weight: 700;
+  border: 1.5px solid rgb(51, 45, 45);
+  color: black;
+}
+
+/* hover effect*/
+
+.functions a:hover {
+  transition: 0.3s;
+  color: deepskyblue;
+  background-color: lightyellow;
+}
+
+.clause {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,287 @@
+/* universal modifier */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.w {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header part */
+
+.header {
+    position: relative;
+    height: 80px;
+    background-color: lightyellow;
+}
+
+/* header logo part */
+
+.header .logo1 {
+    position: absolute;
+    left: 3%;
+    height: 84px;
+}
+
+/* header top-search */
+
+.header .topSearch {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -250px;
+}
+
+.inputBox {
+    display: inline-block;
+    width: 400px;
+    height: 40px;
+}
+
+/* search button */
+
+.searchButton {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}
+
+.download {
+    position: absolute;
+    top: 5px;
+    right: 3%;
+}
+
+.download .app1 {
+    float: left;
+    display: block;
+    margin-top: 5px;
+    margin-right: 2px;
+    height: 35px;
+}
+
+.download .app2 {
+    float: left;
+    display: block;
+    height: 45px;
+}
+
+/* start of top bar */
+
+.top {
+    padding: 0 40px;
+}
+
+.top, .banner .logo, .baner a {
+    height: 40px;
+    background-color: rgb(51, 45, 45);
+}
+
+.topRight, .topLeft {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.topRight {
+    float: right;
+}
+
+.top a, .banner a {
+    padding: 10px;
+    text-decoration: none;
+    color: wheat;
+}
+
+.top a:hover {
+    transition: 0.3s;
+    color: rgb(51, 45, 45);
+    background-color: #fff;
+    border: white 0.1px solid;
+}
+
+/* end of top bar */
+
+.resultText {
+    position: absolute;
+    left: 0;
+    top: -27px;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* filter part */
+
+.filter {
+    position: relative;
+    height: 145px;
+    margin: 35px auto;
+    border-radius: 15px;
+    line-height: 20px;
+    padding: 10px;
+    border: solid pink 0.1px;
+    background-color: lightyellow;
+}
+
+.filter dl {
+    position: absolute;
+    top: 5px;
+}
+
+.filter .rating {
+    left: 5%;
+}
+
+.filter dt {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.filter .rating dd a {
+    font-family: 'icomoon';
+    color: chocolate;
+}
+
+.filter .sortPrice {
+    left: 50%;
+    margin-left: -28px;
+    line-height: 22px;
+}
+
+.filter .sortPrice a {
+    color: black;
+}
+
+.filter .sortPrice a:hover {
+    font-weight: 700;
+    color: chocolate;
+}
+
+.filter .sortOrder {
+    right: 5%;
+}
+
+.filter .sortOrder button {
+    height: 30px;
+    margin: 2px;
+    width: 130px;
+}
+
+/* Result Part */
+
+.result {
+    height: 1536px;
+    margin: 10px auto;
+    background-color: wheat;
+}
+
+.result .box {
+    float: left;
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.result .box .image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.stars-outer {
+    position: relative;
+    display: inline-block;
+}
+
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.stars-outer::before {
+    content: "\e9d9\e9d9\e9d9\e9d9\e9d9";
+    font-family: 'icomoon';
+    font-weight: 900;
+    color: #ccc;
+}
+
+.stars-inner::before {
+    content: "\e9d9\e9d9\e9d9\e9d9\e9d9";
+    font-family: 'icomoon';
+    font-weight: 900;
+    color: #f8ce0b;
+}
+
+/* This funtion is to limit the number of words shwon below the item picture
+to avoid overflow. */
+
+/* Warning: this is not supported in some browser such as IE, but it will not
+cause problem. The "..." won't show up. */
+
+.result .intro {
+    margin-bottom: 10px;
+    height: 37px;
+    /* overflow protection for two lines:  */
+    overflow: hidden;
+    /* The model of flex box */
+    display: -webkit-box;
+    /* number of lines limited: */
+    -webkit-line-clamp: 2;
+    /* Set up the arrangement of the daughter element:*/
+    -webkit-box-orient: vertical;
+}
+
+.result a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: gray;
+}
+
+.result .price::before {
+    content: "$";
+}
+
+.result .price {
+    margin-left: 10px;
+    display: inline-block;
+    color: orange;
+    font-size: 20px;
+}
+
+.result .sold {
+    display: inline-block;
+    /* text-align: right; */
+    margin-left: 2px;
+    margin-right: 20px;
+    color: gray;
+}
+
+/* Body description section style changing */
+
+body .description li {
+    list-style-type: circle;
+    font-size: 13px;
+    margin-top: 3px;
+}
