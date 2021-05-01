@@ -2,10 +2,10 @@
 -- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- 主机： 127.0.0.1
--- 生成日期： 2021-04-30 23:55:14
--- 服务器版本： 10.4.18-MariaDB
--- PHP 版本： 8.0.3
+-- Host: 127.0.0.1
+-- Generation Time: May 01, 2021 at 04:21 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 数据库： `bigdeal`
+-- Database: `bigdeal`
 --
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `products`
+-- Table structure for table `products`
 --
 
 CREATE TABLE `products` (
@@ -39,7 +39,7 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 转存表中的数据 `products`
+-- Dumping data for table `products`
 --
 
 INSERT INTO `products` (`id`, `imgUrl`, `link`, `intro`, `price`, `sold`, `number-rating`, `description`) VALUES
@@ -61,21 +61,21 @@ INSERT INTO `products` (`id`, `imgUrl`, `link`, `intro`, `price`, `sold`, `numbe
 (58, 'images/imagesOfResultPage/thumb16.jpg', '', 'Earphone ', 19.99, 99, 3.7, 'Para1||Para2||Description');
 
 --
--- 转储表的索引
+-- Indexes for dumped tables
 --
 
 --
--- 表的索引 `products`
+-- Indexes for table `products`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
--- 在导出的表使用AUTO_INCREMENT
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- 使用表AUTO_INCREMENT `products`
+-- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
